@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Stream</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #eaf3ef;
+    }
+
+    .container {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      align-items: center;
+    }
+
+    .card {
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      background: #000;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
+
+    .cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      padding: 18px 36px;
+      background: #2ecc71;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #27ae60;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-    <h1>hello world</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quod debitis accusamus quasi perferendis, ad maiores. Nobis aut placeat nostrum doloribus, tenetur ducimus ab officia facere incidunt distinctio fugit nihil!</p>
-        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos in qui officiis eligendi delectus non similique sunt laboriosam, temporibus sapiente ipsa numquam nam? Voluptatibus nemo fugit amet reiciendis, quasi reprehenderit?</h1>
+
+  <div class="container">
+    <div class="card"><img src="https://picsum.photos/500/300?random=1" /></div>
+    <div class="card"><img src="https://picsum.photos/500/300?random=2" /></div>
+    <div class="card"><img src="https://picsum.photos/500/300?random=3" /></div>
+    <div class="card"><img src="https://picsum.photos/500/300?random=4" /></div>
+
+    <div class="card"><img src="https://picsum.photos/500/300?random=5" /></div>
+    <div class="card"><img src="https://picsum.photos/500/300?random=6" /></div>
+    <div class="card"><img src="https://picsum.photos/500/300?random=7" /></div>
+    <div class="card"><img src="https://picsum.photos/500/300?random=8" /></div>
+
+    <div class="cta">
+      <button class="btn">Watch Now</button>
+    </div>
+  </div>
+
 </body>
 </html>
